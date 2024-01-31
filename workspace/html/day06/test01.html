@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 100px;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            
+        }
+        .header--text-box{
+            height: 50px;
+
+
+        }
+        nav{
+            height: 50px;
+            background-color: darkblue;
+            font-size: 20px;
+            width: 100%; 
+        }
+        ul{
+            display: flex;
+            list-style: none;
+           
+
+        }
+        li{
+            height: 50px;
+            line-height: 50px;
+            margin: 0 10px;
+            /* border: 1px solid white; */
+            /* 테두리 확인용 */
+        }
+        .main-container{
+            display: flex;
+            height: 500px;
+        }
+        aside{
+            background-color: darkorchid;
+            width: 200px;
+            height: 100%;
+            color: white;
+            font-size: 30px;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            font-size: 30px;
+        }
+        section{
+            background-color: rgb(91, 169, 208);
+            margin: 20px auto;    
+        }
+        .section01{
+            width: 40%;
+            height: 30%;
+            
+        }
+        .section02{
+            width: 40%;
+            height: 40%;
+        }
+        .section01--text-box,
+        .section02--text-box{
+            height: 20%;
+        
+        }
+        .section01--article-container,
+        .section02--article-container{
+            display: flex;
+            width: 100%;
+            height: 80%;
+            
+        }
+        .section02--article-container{
+            flex-wrap: wrap;
+        }
+        article{
+            background-color: rgb(60, 121, 100);
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .section01--article{
+            width: 100px;
+            height: 60%;
+        }
+        .section02--article{
+            width: 40%;
+            height: 40%;
+        }
+        footer{
+            height: 100px;
+            background-color: darkcyan;
+            font-size: 30px;
+            color: white;
+            display: flex;
+        }
+        .footer--text-box{
+            margin: auto;
+
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header--text-box">header</div>
+        <!-- 여기서 글씨가 하얀색으로 나오는 이유는 header 스타일 때문
+        기본적으로 요소의 스타일은 부모의 스타일을 물려받음 -->
+        <nav>
+            <ul>
+              <li>nav 메뉴1</li>
+              <li>nav 메뉴2</li>
+              <li>nav 메뉴3</li>
+              <li>nav 메뉴4</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <aside>
+            <div class="aside--text-box">aside</div>
+        </aside>
+         <main>
+            <div class="main--text-box">main</div>
+             <section class="section01">
+                <div class="section01--text-box">section01</div>
+                <div class="section01--article-container">
+                    <article class="section01--article">
+                        <div class="article--text-box">article</div>
+                    </article>
+                    <article class="section01--article">
+                        <div class="article--text-box">article</div>
+                    </article>
+                    <article class="section01--article">
+                        <div class="article--text-box">article</div>
+                    </article>
+                </div>
+             </section>
+            <section class="section02">
+                <div class="section02--text-box">section02</div>
+                <div class="section02--article-container">
+                    <article class="section02--article">
+                        <div article--text-box>article</div>
+                    </article>
+                    <article class="section02--article">
+                        <div article--text-box>article</div>
+                    </article>
+                    <article class="section02--article">
+                        <div article--text-box>article</div>
+                    </article>
+                    <article class="section02--article">
+                        <div article--text-box>article</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer--text-box">footer</div>
+    </footer>
+    
+</body>
+</html>
