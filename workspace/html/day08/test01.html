@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main,
+        section,
+        div{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        main{
+            width: 80%;
+            height: 600px;
+        }
+        section{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+        }
+        div{
+            width: 80%;
+            margin: 10px auto;
+        }
+
+         /* 고급선택자 */
+        main div{
+            /* 하위 선택자는 main의 자손요소를 모두 선택한다  */
+            border-radius: 20px;
+            background-color: lightgrey;
+
+        }
+        section > div{
+            /* 자식 선택자 내 바로아래 포함된 자식요소를 선택한다*/
+            background-color: lightblue;
+        }
+        .div3 +div{
+            /* 인접 형제 선택자는 바로 다음에 오는 형제요소 하나를 선택한다  */
+            background-color: lightcoral;
+        }
+        .div3~div{
+            /* 형제 선택자는 다음에 오는 모든 형제요소를 선택한다 */
+            border: 2px solid white;
+        }
+
+        /* 속성 선택자 */
+        a[id]{
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a[href="http://naver.com"]{
+            color: darkcyan;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        main
+        <section>
+            section
+            <div class="container">
+            <div class="div1">div1</div>
+            <div class="div2">
+                <a href="http://naver.com">div2</a>
+            </div>
+            <div class="div3">
+                <a href="https://www.google.com/" id="aa">div3</a>
+            </div>
+            <div class="div4">div4</div>
+            <div class="div5">div5</div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
