@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login-box{
+            height: 350px;
+            width: 50%;
+            background-color: rgb(162, 211, 211);
+           
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            line-height: 40px;
+
+        }
+        .content{
+            height: 450px;
+            width: 100%;
+         
+        }
+        h2{
+           text-align: center;
+        }
+        ul{
+            list-style: none;
+            font-size: 15px;
+            padding-top: 30px;
+            margin-right: 10px;
+
+        }
+        .submit-box{
+           
+           width: 70px;
+           height: 40px;
+        }
+        .pw-box{
+            height: 60px;
+            width: 200px;
+            border: 1px solid white;
+            font-size: 15px;
+            margin: 5px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        .id-box{
+            height: 60px;
+            width: 200px;
+            border: 1px solid white;
+            font-size: 15px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+        p{
+            display: inline;
+            margin: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h2>로그인</h2>
+            <div class="login-box">
+                
+                <ul>
+    
+                    <li>
+                        
+                        <input class="id-box" type="text" id="id" placeholder="아이디">
+                    </li>
+                    <li>
+                        
+                        <input class="pw-box" type="password" id="pw" placeholder="비밀번호" required>
+                    </li>
+                    로그인 상태 유지<input type="radio" value="1" name="radio1" >
+                </ul>
+                
+                <input class="submit-box" type="submit" value="로그인">
+                <div>
+                <p>아이디 찾기</p>
+                <p>비밀번호 찾기</p>
+                <p>회원 가입</p>
+                </div>
+                
+            </div>
+           
+            
+        </div>
+     
+        
+    </main>
+    
+</body>
+</html>
