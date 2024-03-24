@@ -1,0 +1,143 @@
+day09
+
+form 태그
+<form action="데이터를 처리할 구조" method="get | post">폼 요소</form>
+1. form 태그는 사용자에게 입력 받은 데이터를 서버로 전송하기 위해 작성한다.
+2. 입력 받은 데이터를 폼 데이터, 필드라고 부른다
+3. form 태그 내부요소로 input, textarea, select, option태그 등을 가질 수 있다. 
+4. 주요 속성 값은 다음과 같다 
+	- action : form 태그 내부 요소에 작성된 데이터를 처리할 서버쪽의 
+		   파일 주소를 작성한다.
+	- method : 서버에 데이터를 넘겨주는 방법을 작성한다.
+	
+
+input 태그
+<input type ="사용할 타입">
+1. 실질적으로 사용자에게 입력을 받는 태그
+2. form태그 내부에 작성해야 서버쪽에 데이터를 넘겨줄 수 있다.
+3. type속성의 값에 따라 입력받는 방식이 달라진다. 
+	-text : 텍스트 형태로 사용자에게 입력을 받는다(아이디, 주소 등응)
+	-password : 패스워드를 입력받는다(화면에 입력한 값이 보이지 않음)
+	-date : 년, 월, 일을 선택하여 입력받는다. 
+	-submit : 전송 버튼을 만든다
+	-reset : 리셋 버튼을 만든다
+	-file : 첨부파일 버튼을 만든다
+	-hidden : 화면에서는 보이지 않는 칸을 만든다.
+		주로 name과 value속성을 같이 사용한다. 
+	-radio : 라디오 버튼을 만든다. 
+	라디오 버튼은 여러 선택지 중 하나만 선택한다. 
+	- checkbox : 체크 박스를 만든다.
+	체크 박스는 여러 선택지 중 여러 개를 선택한다. 
+	라디오, 체크 박스는 name, value와 checked 속성을 사용한다. 
+	
+label 태그
+사용자가 입력하는 input 태그에 대한 설명이다. 
+웹 접근성에 좋기 때문에 적극적으로 사용하는게 좋다.
+1. Label 태그를 사용하고 하위 태그로 input태그를 사용하면 된다
+	<label>
+		이름 :
+		<input type="text">
+	</label>
+1. for와 id속성을 사용하면 input태그와 연결할 수 있다.
+	<label for ="name">이름 : </label>
+	<input type="text" id = "name">
+
+filedset과 legend
+filedset은 여러 label을 묶을 때 사용한다.
+legend는 fieldset의 설명을 나타낸다.
+
+input 태그의 주요 속성 
+
+- autofocus 
+	페이지 진입시 자동으로 focus됨
+	마우스 커서가 해당 input에서 깜박임
+	
+- readonly
+	읽기 전용 필드로 설정함
+	사용자가 입력할 수 없음
+	
+- disabled
+	해당 태그를 비활성화 시키며 필드 데이터를 서버에 전송하지 않음
+	
+- placeholder
+	input에 힌트를 표시함
+	ex) 아이디를 입력하는 칸에 '아이디를 입력하세요'등의 문구를 띄움.
+
+- required
+	필수 필드로 설정한다. (반드시 입력해야함)
+	필드의 데이터들을 submit버튼을 눌러서 전송할 때 필수 필드에 
+	데이터가 있는지 확인한다.
+	
+- value 
+	텍스트를 입력하는 input에 미리 데이터를 채울 수 있다.
+	submit 버튼의 텍스트를 변경할 수도 있다.
+
+- name 
+	서버쪽에 데이터를 보낼 때 데이터가 무슨 데이터인지 이름 붙여 보낸다. 
+
+textarea태그
+텍스트를 여러 줄 입력하는 영역을 만드는 태그
+<textarea cols="가로너비" rows="세로너비">내용</textarea>
+
+select, option 태그
+여러 옵션 중 하나를 선택하는 드롭다운 목록을 만드는 태그 
+
+<select>
+	<option value="1>내용1</option>
+	<option value="2>내용2</option>
+	...
+</select>
+
+- option의 value가 실질적으로 서버에 넘어가는 값이다
+- selected 속석을 이용하면 페이지 진입시 선택되는 옵션을 설정할 수 있다.
+
+button태그
+- submit
+	서버로 폼 데이터를 전송한다(기본값)
+
+- reset
+	폼 데이터를 리셋한다
+
+- button
+	딱히 기능이 없이 버튼만 만든다
+	주로 JavaScript와 함께 쓰인다. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
